@@ -29,3 +29,13 @@ They also have a frame which is a container of sorts. Frames contain a source, d
 When devices attempt to use a medium simultaneously, frame collisions may occur.
 
 The data link layer often includes data-link protocols that specify how devices should detect and recover from these collisions.
+
+## Other Networking Concepts
+
+### IP Addresses & IP Conversions
+
+It's possible to convert from dotted decimal IPs to binary IPs (and vice versa if necessary).
+
+This is because both addresses are 32 bits and divided into four parts containing 8 bits each (these parts can be referred to as octets).
+
+Each octet is separated by a period.
