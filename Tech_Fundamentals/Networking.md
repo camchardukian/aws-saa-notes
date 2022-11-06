@@ -44,6 +44,16 @@ Packets also have a source and destination IP address.
 
 Packets have a time-to-live or hop limit, which dictates the maximum number of hops a packet can go through before being discarded.
 
+## OSI Model Layer 4 (Transport)
+
+The 4th layer of the OSI model is the transport layer.
+
+This layer handles transport protocols such as the _Transmission Control Protocol_ (TCP) and _User Datagram Protocol_ (UDP).
+
+TCP is the more reliable procotol while UDP is faster and more efficient.
+
+TCP can assist with the retransmission of lost packets. UDP can't because it focuses on speed and efficiency rather than reliability.
+
 ## Other Networking Concepts
 
 ### IP Addresses & IP Conversions
