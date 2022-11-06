@@ -89,3 +89,15 @@ _Routes_ are used to determine where a packet should be forwarded to.
 _Route tables_ are simply tables containing many routes.
 
 _Routers_ help move packets from a source to a destination -- encapulating the packets in different layer 2 frames along the way.
+
+### Network Address Translation
+
+_Network Address Translation_ (NAT) is the process of adjusting packets' source and destination addresses to allow transit across different networks.
+
+We generally only need to use NAT with IPv4.
+
+The engineers that created IPv4 couldn't predict that the 4,294,967,296 available public IPv4 addresses wouldn't be enough.
+
+IPv6 on the other hand has enough available addresses that NAT is generally unnecessary.
+
+For that reason, it seems likely that one day we will no longer need NAT or private IP addresses.
