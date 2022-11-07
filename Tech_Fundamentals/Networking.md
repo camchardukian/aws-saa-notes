@@ -72,6 +72,16 @@ If the network component of two IP addresses match, then those two devices are l
 
 IP addresses need to be unique both globally and locally.
 
+### Subnetting
+
+_Subnetting_ is the process of breaking a network up into smaller logical sub-networks commonly called subnets.
+
+The larger the prefix value, the smaller the network.
+
+The entire internet is a /0 network. That's the reason 0.0.0.0 is often the default route (because it matches the entire internet).
+
+Networks are usually split into even numbers. While uncommon, odd number splits can also be valid.
+
 ### Subnet Mask
 
 A _subnet mask_ is a dotted decimal version of a binary number that indicates which part of an IP address is the network and which part is the host.
