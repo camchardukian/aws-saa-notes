@@ -122,5 +122,28 @@ DDoS attacks can be broadly sorted into three categories:
 
 - **Protocol Attacks** -- Protocol attacks attempt to exhaust the resource of a server or the infrastructure surrounding it such as its firewalls, routing engines, or load balancers. The most common example of this type of attack is the SYN flood attack.
 
-- **Volumetric Attacks** -- This type of attack attempts to bombard a server with tremendous amounts of traffic such that the server's bandwidth gets completely exhausted.
-  The most common example of this type of attack is the DNS amplification attack.
+- **Volumetric Attacks** -- This type of attack attempts to bombard a server with tremendous amounts of traffic such that the server's bandwidth gets completely exhausted. The most common example of this type of attack is the DNS amplification attack.
+
+### SSL & TLS
+
+_Secure Sockets Layer_ (SSL) and _Transport Layer Security_ (TLS) are two protocols used to help securely authenticate and transport data over the internet.
+
+Both operate in similar fashions, but TLS is used more these days as SSL is deprecated.
+
+SSL 2.0 and 3.0 were released in the mid 1990s (SSL 1.0 was never released due to security issues), and both were since deprecated in the mid 2010s.
+
+There is no difference between a TLS and an SSL certificate. Both refer to the same thing.
+
+The way both TLS and SSL work is that an TLS/SSL certificate is installed on a website.
+
+This certificate contains a public key as well as a private key that authenticates the server and allows it to encrypt/decrypt data.
+
+When a visitor visits a website the browser will attempt to verify that website's SSL certificate.
+
+It's able to do this because browsers come installed with the public keys of the major certificate authorities (CAs).
+
+Thus, the browser is able to check that a web server's certificate was signed by the trusted certificate authority.
+
+If the browser confirms this successfully, it will create an encrypted link between itself and the server to securely transport data.
+
+And if not... that's when we're likely to encounter the familiar, "Your connection is not private" error.
