@@ -111,3 +111,16 @@ The engineers that created IPv4 couldn't predict that the 4,294,967,296 availabl
 IPv6 on the other hand has enough available addresses that NAT is generally unnecessary.
 
 For that reason, it seems likely that one day we will no longer need NAT or private IP addresses.
+
+## Distributed Denial of Service (DDoS) Attacks
+
+DDoS attacks compete with legitimate traffic by overwhelming servers/services/networks with a flood of internet traffic.
+
+DDoS attacks can be broadly sorted into three categories:
+
+- **Application Layer Attacks** -- This type of attack takes advantage of the fact that it's often very easy to make requests from the client, but expensive for the server to generate a response.
+
+- **Protocol Attacks** -- Protocol attacks attempt to exhaust the resource of a server or the infrastructure surrounding it such as its firewalls, routing engines, or load balancers. The most common example of this type of attack is the SYN flood attack.
+
+- **Volumetric Attacks** -- This type of attack attempts to bombard a server with tremendous amounts of traffic such that the server's bandwidth gets completely exhausted.
+  The most common example of this type of attack is the DNS amplification attack.
