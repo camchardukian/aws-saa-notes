@@ -168,3 +168,11 @@ Some practical uses of hashing include:
 - Signature generation and verification
 - Proof-of-work
 - File or data identification
+
+### Digital Signatures
+
+_Digital signatures_ are electronic, encrypted stamps of authentication that can accompany emails, messages, or other electronic documents.
+
+Digital signatures utilize public/private keys and hashing to help us verify the "who" and "what" of data/documents.
+
+In other words, these digital signatures can help us to confirm that the information sent originated from the sender and has not been altered.
