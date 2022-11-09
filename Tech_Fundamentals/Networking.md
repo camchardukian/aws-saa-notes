@@ -140,10 +140,31 @@ This certificate contains a public key as well as a private key that authenticat
 
 When a visitor visits a website the browser will attempt to verify that website's SSL certificate.
 
-It's able to do this because browsers come installed with the public keys of the major certificate authorities (CAs).
+It's able to do this because browsers come installed with the public keys of the major _certificate authorities_ (CAs).
 
 Thus, the browser is able to check that a web server's certificate was signed by the trusted certificate authority.
 
 If the browser confirms this successfully, it will create an encrypted link between itself and the server to securely transport data.
 
 And if not... that's when we're likely to encounter the familiar, "Your connection is not private" error.
+
+### Hashing
+
+_Hashing_ is a process where data of any arbitrary size is mapped to fixed-size values.
+
+Some of the core concepts of hashing are as follows:
+
+1. The same input should always result in the same outout.
+1. Different data should never generate the same hash value.
+1. Changing even one pixel or character should result in a different hash value being output.
+1. Hashing is 1-way only -- it cannot (without infinite processing power), give us back the same data/document used to generate the hash.
+
+When two different pieces of data generate the same hash value, it's referred to as a _collision_. This is one of the potential issues that can occur when using some hashing algorithms such as MD5.
+
+Some practical uses of hashing include:
+
+- Verifying the integrity of downloaded content
+- Password verification
+- Signature generation and verification
+- Proof-of-work
+- File or data identification
