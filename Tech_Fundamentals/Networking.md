@@ -176,3 +176,20 @@ _Digital signatures_ are electronic, encrypted stamps of authentication that can
 Digital signatures utilize public/private keys and hashing to help us verify the "who" and "what" of data/documents.
 
 In other words, these digital signatures can help us to confirm that the information sent originated from the sender and has not been altered.
+
+### DNS Overview
+
+The _Domain Name System_ (DNS) can be thought of as the phonebook of the internet.
+
+Historically, if you knew someone's name you could look up their phone number in the phonebook.
+
+Likewise, if we know a website's domain name, DNS can find the IP address of that website's server for us.
+
+Here are some key terms related to DNS:
+
+- **Top-Level Domain (TLD)** -- This is the final part of the domain name such as .com, .org, .net, etc.
+- **DNS Zone** -- A portion of the DNS namespace that is managed by a specific organization or administrator.
+- **DNS Record** -- A domain name along with its corresponding IP address.
+- **Root Servers** -- There are currently 13 root servers in operation that handle requests for information about top-level domains.
+- **Top-Level Domain Servers (TLD Servers)** -- Receives requests from the root server to find information about its specific TLD type. For example, the .org TLD server will help to find where .org TLD are located.
+- **Zone Files** -- Zone files are the way that name servers store information about the domains they know about.
