@@ -193,3 +193,11 @@ Here are some key terms related to DNS:
 - **Root Servers** -- There are currently 13 root servers in operation that handle requests for information about top-level domains.
 - **Top-Level Domain Servers (TLD Servers)** -- Receives requests from the root server to find information about its specific TLD type. For example, the .org TLD server will help to find where .org TLD are located.
 - **Zone Files** -- Zone files are the way that name servers store information about the domains they know about.
+
+### Domain Name System Security Extensions (DNSSEC)
+
+One of the problems with DNS is that it doesn't check for credentials before accepting an answer.
+
+Fortunately, a protocol called DNSSEC strengthens authentication in DNS by using digital signatures based on public key cryptography.
+
+DNSSEC helps us to verify that a requested DNS record comes from its authoritative name server and that it wasn't altered en-route.
