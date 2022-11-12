@@ -201,3 +201,11 @@ One of the problems with DNS is that it doesn't check for credentials before acc
 Fortunately, a protocol called DNSSEC strengthens authentication in DNS by using digital signatures based on public key cryptography.
 
 DNSSEC helps us to verify that a requested DNS record comes from its authoritative name server and that it wasn't altered en-route.
+
+### Recovery Point Objective (RPO) & Recovery Time Objective (RTO)
+
+Businesses will typically have a maximum RPO and RTO. We can use these values to make informed decisions on how to design solutions for them.
+
+RPO refers to the maximum amount of data (measured in time) an organization can tolerate losing in a disaster recovery situation.
+
+RTO refers to the maximum amount of time an organization can tolerate a system being down after a failure or disaster occurs.
