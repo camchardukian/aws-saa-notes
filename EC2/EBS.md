@@ -11,3 +11,19 @@ EBS can provision volumes with different physical storage types, different sizes
 EBS is billed on a per GB basis (some extra charges may be applied for high performance volumes).
 
 EBS replicates data within an AZ, but failure of an AZ still means failure of a volume.
+
+## EBS Volume Types
+
+### SSD
+
+**General Purpose SSD (GP2)** — Good for boot volumes, low-latency interactive apps, development, and testing. Currently the default. Credit architecture.
+
+**General Purpose SSD (GP3)** — 3,000 IOPS & 125 MiB/s. Expected to be the default in the future. Good for virtual desktops, medium sizec single instance databases such as MSSQL Server, low-latency interactive apps, development, testing, and boot volumes.
+
+**Provisioned IOPS SSD (io1/2)** — Good for high performance, latency sensitive workloads, I-O-intensive NoSQL, and relational databases.
+
+### HDD
+
+**Throughput Optimized HDD (st1)** — A low-cost HDD designed for frequently accessed, throughput-intensive workloads. Good for Big Data, data warehouses, log processing.
+
+**Cold HDD (sc1)** — The lowest-cost HDD designed for less frequently accessed workloads. Good for saving money if you have archives or other data that requires fewer scans per day.
