@@ -27,3 +27,17 @@ EBS replicates data within an AZ, but failure of an AZ still means failure of a 
 **Throughput Optimized HDD (st1)** — A low-cost HDD designed for frequently accessed, throughput-intensive workloads. Good for Big Data, data warehouses, log processing.
 
 **Cold HDD (sc1)** — The lowest-cost HDD designed for less frequently accessed workloads. Good for saving money if you have archives or other data that requires fewer scans per day.
+
+## EBS Snapshots
+
+It’s possible to back up the data on our EBS volumes to Amazon S3 using snapshots. Because snapshots are stored in S3, they are region resilient.
+
+Snapshots are incremental, the first snapshot is a full backup and any future snapshots save only the blocks on the device that have changed since the last snapshot.
+
+Snapshots are incremental because this minimizes the time required to create the snapshot and saves on storage costs by not duplicating data.
+
+Each snapshot contains all of the information that is needed to restore our data (from the moment the snapshot was taken) to a new EBS volume.
+
+Snapshots can be used to migrate data to different availability zones in a region, or to different regions of AWS.
+
+Snapshots are billed based on allocated GB of data per month.
