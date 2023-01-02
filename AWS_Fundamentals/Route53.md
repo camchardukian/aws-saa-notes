@@ -1,6 +1,6 @@
 # Route 53
 
-_Amazon Route 53_ is highly available and scalable DNS web service.
+_Amazon Route 53_ is a highly available and scalable DNS web service.
 
 It connects user requests to internet applications running on AWS or on-premises.
 
