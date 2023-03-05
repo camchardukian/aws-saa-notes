@@ -4,7 +4,7 @@ These are three parts of the same product family designed to allow the physical 
 
 ## Snowball
 
-A 50TB or 80TB device ordered from AWS. It tends to be economical to use this device when we need 10TB-10PB of data transferred.
+Snowball is a 50TB or 80TB device ordered from AWS. It tends to be economical to use this device when we need 10TB-10PB of data transferred.
 
 Multiple Snowball devices can be sent to multiple premises.
 
